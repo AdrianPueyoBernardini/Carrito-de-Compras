@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+
+    <script src="js/fakeBackend.js" defer></script>
+    <script src="js/itemsToIndex.js" defer></script>
+    <!--<script src="js/cart.js" defer></script>-->
+    
+</head>
+<body>
+    <header class="HeaderContainer">
+        <div>
+            <img src="images/logo.png" alt="Logo" class="headerLogo">
+        </div>
+
+        <div>
+            <form action="">
+                <div class="searchBarContainer">
+                    <input type="text" placeholder="Buscar" class="searchBar" id="buscador" oninput="search()">
+                    <img src="images/search.png" alt="search" class="seachIcon">
+                </div>
+
+            </form>
+        </div>
+
+
+        <nav class="navBar">
+            <a href="#" class="navLink">Inicio</a>
+
+            <hr class="navHr">
+
+            <a href="#" class="navLink">Soporte</a>
+
+            <hr class="navHr">
+
+            <div class="shoppingButton">
+                <a href="#" class="textDecNone" onclick="openCart()"><img src="images/shoppingcart.png" alt="shopping cart" class="headerShoppingCart" style="background-color:white"><span id="cartCounter">0</span></a>
+ 
+            </div>
+
+        </nav>
+        
+
+    </header>
+    <hr class="bottomHeaderHr">
+    <div class="mainContainer">
+        <section class="container">
+
+
+        </section>
+
+        <div id="sidePanel">
+            <div class="cartTotal">
+                <p><b>Total: </b></p>
+                <p id="totalCost">0$</p>
+            </div> 
+         </div>
+
+    </div>
+
+
+</body>
+</html>
